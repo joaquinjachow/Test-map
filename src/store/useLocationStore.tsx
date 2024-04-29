@@ -5,11 +5,9 @@ interface LocationState {
     longitude: number | null;
     setLocation: (lat: number, lon: number) => void;
 }
-
 interface LocationStore extends LocationState {
     setLocation: (lat: number, lon: number) => void;
 }
-
 const useLocationStore = create<LocationStore>((set) => {
     const initialState: LocationStore = {
         latitude: null,

@@ -1,10 +1,11 @@
-import SimpleMap from "@/components/map";
+import SimpleMap from "@/components/map/map";
+import ComponenteEjemplo from "@/components/map/componenteEjemplo";
 
 export default function Home() {
   return (
     <main>
-      <h1 className="text-3xl font-bold underline">hola</h1>
       <SimpleMap/>
+      <ComponenteEjemplo/>
     </main>
   );
 }
